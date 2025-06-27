@@ -1,0 +1,10 @@
+import requests
+
+response = requests.get('https://www.google.com/&#39;)
+
+if response.status_code == 200:
+    print('Conexão realizada com sucesso ! 😁')
+else:
+    print(f'Erro na requisição ao servidor indicado: 🗒️  {response.status_code} ')
+
+
